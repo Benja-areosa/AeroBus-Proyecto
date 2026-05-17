@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Prácticas de SEO -->
+    <meta name="description" content="AerobusHotel: Tu empresa de viajes y hotelería de confianza. Reserva tus próximas vacaciones al mejor precio.">
+    <meta name="keywords" content="viajes, hotel, aerobus, vacaciones, turismo, reservas">
+    <title>Inicio | AerobusHotel</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+<body>
+
+    <!-- Encabezado Semántico -->
+    <header class="encabezado-principal">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">AerobusHotel</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion"
+                  aria-controls="menuNavegacion" aria-expanded="false" aria-label="Alternar navegación">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuNavegacion">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="destinos.html">Destinos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="seccion-hero text-center py-5" data-aos="fade-down" data-aos-duration="1000">
+            <div class="container">
+                <h1 class="display-4 fw-bold">Descubre el mundo con AerobusHotel</h1>
+                <p class="lead">Viajes inolvidables y las mejores comodidades a tu alcance.</p>
+                <a href="destinos.html" class="boton-accion">Ver Destinos</a>
+            </div>
+        </section>
+
+        <section class="seccion-destacados py-5">
+            <div class="container">
+                <h2 class="text-center mb-4" data-aos="fade-up">Paquetes Destacados</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-3" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Escapada a la Montaña</h3>
+                                <p class="card-text">Disfruta de la naturaleza con nuestros hoteles asociados en la cordillera.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Vacaciones en la Playa</h3>
+                                <p class="card-text">Relájate en las mejores costas con todo incluido.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Turismo Urbano</h3>
+                                <p class="card-text">Hoteles céntricos para recorrer las principales ciudades.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="container">
+            <p>&copy; 2026 AerobusHotel.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

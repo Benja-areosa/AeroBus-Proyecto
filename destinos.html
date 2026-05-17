@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce todos los destinos que AerobusHotel tiene para ofrecerte.">
+    <title>Destinos | AerobusHotel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="scss/style.css"> <!-- Ojo, verifica que la ruta sea correcta -->
+</head>
+<body>
+    <!-- Encabezado (Igual que el index) -->
+    <header class="encabezado-principal">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">AerobusHotel</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuNavegacion">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="destinos.html">Destinos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="seccion-interna">
+        <div class="container">
+            <h1 class="text-center mb-5" data-aos="fade-down">Nuestros Destinos</h1>
+            <div class="row">
+                <!-- Tarjeta 1 -->
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 shadow-sm">
+                        <!-- Puedes agregar una imagen aquí con <img src="..." class="card-img-top"> -->
+                        <div class="card-body">
+                            <h2 class="card-title h4">Punta Cana, República Dominicana</h2>
+                            <p class="card-text">Disfruta de playas de arena blanca y aguas cristalinas. Nuestros hoteles resort con sistema "Todo Incluido" te garantizan el descanso perfecto bajo el sol del Caribe, con actividades para toda la familia y una gastronomía de primer nivel.</p>
+                            <a href="contacto.html" class="boton-accion">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 2 -->
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h2 class="card-title h4">San Carlos de Bariloche, Argentina</h2>
+                            <p class="card-text">El destino ideal para los amantes de los paisajes majestuosos. Deslúmbrate con el imponente Cerro Catedral, navega por el lago Nahuel Huapi y disfruta de la mejor ruta del chocolate y la cerveza artesanal del país.</p>
+                            <a href="contacto.html" class="boton-accion">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 3 -->
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h2 class="card-title h4">Madrid, España</h2>
+                            <p class="card-text">Explora la vibrante capital española, llena de historia, cultura y gastronomía. Desde el majestuoso Palacio Real hasta el animado Mercado de San Miguel, Madrid ofrece experiencias inolvidables para todos los gustos.</p>
+                            <a href="contacto.html" class="boton-accion">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="container">
+            <p>&copy; 2026 AerobusHotel. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>

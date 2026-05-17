@@ -1,0 +1,30 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.encabezado-principal {
+    background-color: $color-primario;
+    @include sombra-caja;
+
+    .navbar {
+        padding: 1rem 2rem;
+
+        .navbar-brand {
+            color: $color-blanco;
+            font-weight: bold;
+            font-size: 1.5rem;
+
+            &:hover {
+                color: $color-secundario;
+            }
+        }
+
+        .nav-link {
+            color: $color-blanco;
+            margin-right: 15px;
+
+            &:hover {
+                color: $color-secundario;
+            }
+        }
+    }
+}

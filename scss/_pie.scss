@@ -1,0 +1,14 @@
+@use 'variables' as *;
+
+.pie-pagina {
+    background-color: #222;
+    color: $color-blanco;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+
+    p {
+        margin: 0;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,35 @@
+@use 'sass:color';
+@use 'variables' as *;
+
+.boton-base {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: $fuente-principal;
+    background-color: $color-fondo;
+    color: $color-texto;
+    margin: 0;
+    padding: 0;
+}
+
+.boton-accion {
+    @extend .boton-base;
+    background-color: $color-secundario;
+    color: $color-blanco;
+    border: none;
+
+    &:hover {
+        background-color: color.adjust($color-secundario, $lightness: -10%);
+        transform: scale(1.05); 
+    }
+}
+
+.seccion-interna {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}

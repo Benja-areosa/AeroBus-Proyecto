@@ -1,0 +1,65 @@
+.boton-base, .boton-accion {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+.boton-accion {
+  background-color: #ff9800;
+  color: #ffffff;
+  border: none;
+}
+.boton-accion:hover {
+  background-color: rgb(204, 121.6, 0);
+  transform: scale(1.05);
+}
+
+.seccion-interna {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.encabezado-principal {
+  background-color: #0d47a1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.encabezado-principal .navbar {
+  padding: 1rem 2rem;
+}
+.encabezado-principal .navbar .navbar-brand {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.encabezado-principal .navbar .navbar-brand:hover {
+  color: #ff9800;
+}
+.encabezado-principal .navbar .nav-link {
+  color: #ffffff;
+  margin-right: 15px;
+}
+.encabezado-principal .navbar .nav-link:hover {
+  color: #ff9800;
+}
+
+.pie-pagina {
+  background-color: #222;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+.pie-pagina p {
+  margin: 0;
+  font-size: 0.9rem;
+}/*# sourceMappingURL=style.css.map */
