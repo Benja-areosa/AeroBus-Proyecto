@@ -1,0 +1,30 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.seccion-interna {
+    padding: 80px 0;
+
+    h1 {
+        color: $color-primario;
+        font-weight: 800;
+        font-size: 3rem;
+        border-bottom: 4px solid $color-secundario; /* Un subrayado elegante */
+        display: inline-block; /* Para que el subrayado no ocupe todo el ancho */
+    }
+
+    .lead {
+        font-style: italic;
+        color: #555;
+        border-left: 3px solid #ccc;
+        padding-left: 20px;
+    }
+
+    img {
+        @include sombra-caja; /* Tu mixin mágico */
+        transition: transform 0.5s ease;
+        
+        &:hover {
+            transform: scale(1.02); /* Un leve zoom al pasar el mouse */
+        }
+    }
+}
