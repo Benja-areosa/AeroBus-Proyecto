@@ -10,7 +10,7 @@
 .seccion-destacados .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 8px #ff9800;
 }
 .seccion-destacados .card:hover {
   transform: translateY(-10px);
@@ -30,7 +30,7 @@
   margin-bottom: 20px;
 }
 .seccion-hero p {
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(192, 192, 192, 0.9019607843);
   max-width: 700px;
   margin: 0 auto 30px auto;
 }
@@ -106,6 +106,32 @@ body {
   color: #ff9800;
 }
 
+.seccion-interna {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f8f9fa;
+}
+.seccion-interna .card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+.seccion-interna .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+}
+.seccion-interna .card .card-title {
+  color: #ff9800;
+  font-weight: 700;
+}
+.seccion-interna .card .boton-accion {
+  display: inline-block;
+  margin-top: 15px;
+  width: 100%;
+}
+
 .pie-pagina {
   background-color: #222;
   color: #ffffff;
@@ -116,23 +142,4 @@ body {
 .pie-pagina p {
   margin: 0;
   font-size: 0.9rem;
-}
-
-.formulario-aerobus {
-  background-color: #ffffff;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Usamos tu mixin para la sombra! */
-}
-.formulario-aerobus label {
-  font-weight: 600;
-}
-.formulario-aerobus .form-control {
-  border: 1px solid #ced4da;
-}
-.formulario-aerobus .form-control:focus {
-  border-color: #ff9800;
-  box-shadow: 0 0 0 0.25rem rgba(255, 152, 0, 0.25);
-  outline: 0;
 }/*# sourceMappingURL=style.css.map */
