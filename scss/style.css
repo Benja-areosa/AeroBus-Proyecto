@@ -1,9 +1,63 @@
+@charset "UTF-8";
 .boton-base, .boton-accion {
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
   transition: all 0.3s ease;
+}
+
+.seccion-destacados .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+.seccion-destacados .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.seccion-hero {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: #ffffff;
+  padding: 120px 0;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.seccion-hero h1 {
+  color: #ffffff;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.seccion-hero p {
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+}
+
+@keyframes latido {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.boton-accion {
+  background-color: #ff9800;
+  color: #ffffff;
+  border: none;
+  /* Le aplicamos la animación para que "lata" infinitamente */
+  animation: latido 2s infinite;
+}
+.boton-accion:hover {
+  /* Frenamos la animación cuando le pasan el mouse y lo oscurecemos */
+  animation: none;
+  background-color: rgb(204, 121.6, 0); /* Asegurate de usar tu color acá */
+  transform: scale(1.1);
 }
 
 body {
@@ -62,4 +116,23 @@ body {
 .pie-pagina p {
   margin: 0;
   font-size: 0.9rem;
+}
+
+.formulario-aerobus {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Usamos tu mixin para la sombra! */
+}
+.formulario-aerobus label {
+  font-weight: 600;
+}
+.formulario-aerobus .form-control {
+  border: 1px solid #ced4da;
+}
+.formulario-aerobus .form-control:focus {
+  border-color: #ff9800;
+  box-shadow: 0 0 0 0.25rem rgba(255, 152, 0, 0.25);
+  outline: 0;
 }/*# sourceMappingURL=style.css.map */
