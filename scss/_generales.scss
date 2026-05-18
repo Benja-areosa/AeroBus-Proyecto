@@ -9,6 +9,63 @@
     transition: all 0.3s ease;
 }
 
+.seccion-destacados {
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: none;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+
+        &:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+        }
+    }
+}
+
+.seccion-hero {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); 
+    color: $color-blanco; 
+    padding: 120px 0;
+    
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+    h1 {
+        color: $color-blanco;
+        font-weight: 800;
+        margin-bottom: 20px;
+    } 
+
+    p {
+        color: rgba(255, 255, 255, 0.9);
+        max-width: 700px;
+        margin: 0 auto 30px auto;
+    }
+}
+
+@keyframes latido {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.boton-accion {
+    @extend .boton-base;
+    background-color: $color-secundario;
+    color: $color-blanco;
+    border: none;
+    
+    /* Le aplicamos la animación para que "lata" infinitamente */
+    animation: latido 2s infinite;
+
+    &:hover {
+        /* Frenamos la animación cuando le pasan el mouse y lo oscurecemos */
+        animation: none; 
+        background-color: color.adjust(#ff9800, $lightness: -10%); /* Asegurate de usar tu color acá */
+        transform: scale(1.1); 
+    }
+}
+
 body {
     font-family: $fuente-principal;
     background-color: $color-fondo;
