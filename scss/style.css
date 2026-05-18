@@ -159,4 +159,29 @@ body {
 .seccion-interna .list-group-item h3 {
   color: #0d47a1;
   font-weight: 700;
+}
+
+.seccion-interna {
+  padding: 80px 0;
+}
+.seccion-interna h1 {
+  color: #0d47a1;
+  font-weight: 800;
+  font-size: 3rem;
+  border-bottom: 4px solid #ff9800; /* Un subrayado elegante */
+  display: inline-block; /* Para que el subrayado no ocupe todo el ancho */
+}
+.seccion-interna .lead {
+  font-style: italic;
+  color: #555;
+  border-left: 3px solid #ccc;
+  padding-left: 20px;
+}
+.seccion-interna img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Tu mixin mágico */
+  transition: transform 0.5s ease;
+}
+.seccion-interna img:hover {
+  transform: scale(1.02); /* Un leve zoom al pasar el mouse */
 }/*# sourceMappingURL=style.css.map */
