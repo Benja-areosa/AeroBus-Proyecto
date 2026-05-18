@@ -1,0 +1,32 @@
+@use 'mixins' as*;
+@use 'variables' as*;
+
+.seccion-interna {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f8f9fa; // Un gris muy clarito para diferenciar la sección del resto
+
+    .card {
+        @include sombra-caja; // Tu mixin de sombra
+        border: none;
+        border-radius: 15px; // Bordes redondeados para un look moderno
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        overflow: hidden; // Para que la imagen (si agregás después) no se salga del borde
+
+        &:hover {
+            transform: translateY(-10px); // Efecto "flotante" al pasar el mouse
+            box-shadow: 0 20px 30px rgba(0,0,0,0.15); // Sombra más marcada al hacer hover
+        }
+
+        .card-title {
+            color: $color-secundario; // O el color que prefieras para los títulos
+            font-weight: 700;
+        }
+
+        .boton-accion {
+            display: inline-block;
+            margin-top: 15px;
+            width: 100%; // Botón que ocupa todo el ancho de la tarjeta
+        }
+    }
+}
