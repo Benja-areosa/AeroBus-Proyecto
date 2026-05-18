@@ -1,0 +1,25 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.seccion-interna {
+    .list-group-item {
+        @include sombra-caja;
+        border: none; 
+        border-radius: 15px;
+        margin-bottom: 20px;  
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        
+
+        border-left: 5px solid $color-secundario; 
+
+        &:hover {
+            transform: translateX(10px); 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        h3 {
+            color: $color-primario;
+            font-weight: 700;
+        }
+    }
+}
